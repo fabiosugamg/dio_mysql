@@ -27,3 +27,4 @@ CREATE TABLE videos (
 	Title VARCHAR (30) NOT NULL,
 	Likes INT,
 	Dislikes INT
+)
