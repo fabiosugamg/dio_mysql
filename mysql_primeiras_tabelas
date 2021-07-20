@@ -1,0 +1,29 @@
+CREATE TABLE pessoas (
+	id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nome VARCHAR (30) NOT NULL,
+	nascimento DATE
+)
+
+INSERT INTO pessoas (nome, nascimento) VALUES ('Nathaly', '1990/05/22')
+INSERT INTO pessoas (nome, nascimento) VALUES ('Pedro', '199/07/17')
+INSERT INTO pessoas (nome, nascimento) VALUES ('Marcela', '2000/04/05')
+
+UPDATE pessoas SET nome='Nathaly Souza' WHERE id=1
+
+DELETE FROM pessoas WHERE id=1;
+
+SELECT FROM pessoas ORDER BY nome;
+SELECT FROM pessoas ORDER BY nome DESC;  (decrescente)
+
+SELECT COUT (genero), genero FROM pessoas GROUP BY genero;
+
+
+
+
+
+CREATE TABLE videos (
+	id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+	Author VARCHAR (30) NOT NULL,
+	Title VARCHAR (30) NOT NULL,
+	Likes INT,
+	Dislikes INT
